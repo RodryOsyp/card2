@@ -1,0 +1,46 @@
+.all{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    border-radius: 5px;
+}
+.all2{
+    display: flex;
+}
+.yy{
+    display: flex;
+    border-radius: 3px;
+    width: 10%;
+}
+.mm{
+    display: flex;
+    width: 10%;
+    border-radius: 3px;
+}
+.cvc{
+    display: flex;
+    border-radius: 3px;
+    width: 50%;
+    outline: none;
+}
+.confirm{
+    display: flex;
+    background-color: #220930;
+    color: aliceblue;
+
+}
+.block{
+    display: flex;
+    width: 100%;
+    background-color: red;
+    align-items: center;
+    justify-content: center;
+}
+/* .cvc:focus{
+     background: red;
+} */
+.form input{
+    /* justify-content: center;
+    align-items: center;
+    display: flex; */
+}
