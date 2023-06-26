@@ -9,17 +9,17 @@
 }
 .yy{
     display: flex;
-    border-radius: 3px;
-    width: 10%;
+    width: 40px;
+    height: 25px;
+    margin-left: 15px;
 }
 .mm{
     display: flex;
-    width: 10%;
-    border-radius: 3px;
+    width: 40px;
+    height: 25px;
 }
 .cvc{
     display: flex;
-    border-radius: 3px;
     width: 50%;
     outline: none;
 }
@@ -27,20 +27,59 @@
     display: flex;
     background-color: #220930;
     color: aliceblue;
-
+    width: 304px;
+    height: 50px;
+    margin-top: 15px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
 }
 .block{
     display: flex;
     width: 100%;
-    background-color: red;
     align-items: center;
     justify-content: center;
 }
 /* .cvc:focus{
      background: red;
 } */
-.form input{
-    /* justify-content: center;
-    align-items: center;
-    display: flex; */
+.card{
+    display: flex;
+    width: 300px;
+    height: 28px;
+    margin-bottom: 5px;
+}
+.name{
+    display: flex;
+    margin-bottom: -15px;
+    font-size: 25px
+}
+.number{
+    display: flex;
+    margin-bottom: -15px;
+    font-size: 25px;
+}
+.cardN{
+    display: flex;
+    width: 300px;
+    height: 28px;
+    margin-bottom: 5px
+}
+.date{
+    display: flex;
+    width: 180px;
+    margin-bottom: -15px;
+    font-size: 20px;
+}
+.cvcN{
+    display: flex;
+    width: 180px;
+    margin-bottom: -15px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.cvc{
+    display: flex;
+    margin-left: 20px;
+    height: 20px;
 }

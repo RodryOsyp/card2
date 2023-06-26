@@ -5,24 +5,24 @@ const Form = () => {
   return (
     <>
     <form className={style.form}>
-  <label for="fname">CARDHOLDER NAME:</label><br/>
-  <input placeholder='e.g. Tymur Bogdanovich' type="text" id="fname" name="fname"/><br/>
-  <label for="lname">CARD NUMBER:</label><br/>
-  <input placeholder='e.g. 1234 5678 9123 0000' type="text" id="lname" name="lname"/><br/>
+  <label for="fname" className={style.name}>CARDHOLDER NAME:</label><br/>
+  <input placeholder='e.g. Tymur Bogdanovich' type="text" id="fname" className={style.card} name="fname"/><br/>
+  <label for="lname" className={style.number}>CARD NUMBER:</label><br/>
+  <input placeholder='e.g. 1234 5678 9123 0000' type="text" id="lname" className={style.cardN} name="lname"/><br/>
   
   <div className={style.all}>
    <div >     
-    <label   for="lname">EXP. DATE (MM/YY)</label><br/>
+    <label   for="lname" className={style.date}>EXP. DATE (MM/YY)</label><br/>
     <div className={style.all2}> 
-        <input placeholder='YY' type="text" id="lname" name="lname" className={style.yy}/>
         <input placeholder='MM' type="text" id="lname" name="lname" className={style.mm}/>
+        <input placeholder='YY' type="text" id="lname" name="lname" className={style.yy}/>
     </div>
     </div>
 
 
 
-   <div> 
-    <label   for="lname">CVC</label><br/>
+   <div className={style.allCvc}> 
+    <label   for="lname" className={style.cvcN}>CVC</label><br/>
     <div> 
         <input placeholder='e.g. 123' type="text" id="lname" name="lname" className={style.cvc}/>
     </div>
