@@ -1,10 +1,12 @@
-import React, { useContext } from 'react';
-import style from './Form.module.css';
-import { MyContext } from '../../MyContext';
-
-
-const Form = () => {
+import React, { useContext, useState  } from 'react'
+import style from './FormM.module.css'
+import { MyContext } from '../../../../MyContext';
+const FormM = () => {
   const {
+    text,
+    name,
+    expDate,
+    cvc,
     handleTextChange,
     handleNameChange,
     handleExpMonthChange,
@@ -16,13 +18,13 @@ const Form = () => {
     const inputText = event.target.value;
     let formattedText = inputText.replace(/\D/g, '');
     formattedText = formattedText.padEnd(16, '0').slice(0, 16);
-    formattedText = formattedText.replace(/(\d{4}(?!\s))/g, '$1 '); // Добавление пробелов после каждых 4 цифр
+    formattedText = formattedText.replace(/(\d{4}(?!\s))/g, '$1 ');
     handleTextChange(formattedText);
   };
 
   const handleNameInputChange = (event) => {
     const inputName = event.target.value;
-    const trimmedName = inputName.slice(0, 20); // Ограничение до 20 символов
+    const trimmedName = inputName.slice(0, 20);
     handleNameChange(trimmedName);
   };
 
@@ -125,6 +127,7 @@ const Form = () => {
     </form>
   );
 };
+    
+    
 
-
-export default Form
+export default FormM

@@ -1,0 +1,51 @@
+.img {
+    position: relative;
+    width: 380px;
+}
+.card1{
+    margin-top: -90px;
+}  
+.text {
+    position: absolute;
+    top: 280px;
+    width: 400px;
+    font-size: 23px;
+    left: 260px;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.name{
+    position: absolute;
+    top: 330px;
+    font-size: 15px;
+    left: 100px;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.date{
+    position: absolute;
+    top: 330px;
+    font-size: 15px;
+    left: 320px;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.img2 {
+    position: relative;
+    width: 380px;
+}
+.card2{
+    margin-left: 18px;
+    margin-top: 20px;
+
+} 
+.text2{
+    position: absolute;
+    top: 122px;
+    font-size: 25px;
+    left: 330px;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+}
+
+  
