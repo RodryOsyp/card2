@@ -3,7 +3,7 @@
     flex-direction: row;
     width: 200px;
     border-radius: 5px;
-}z
+}
 .all2{
     display: flex;
 }
@@ -11,7 +11,7 @@
     display: flex;
     width: 40px;
     height: 25px;
-    margin-left: 15px;
+    margin-left: 45px;
 }
 .mm{
     display: flex;

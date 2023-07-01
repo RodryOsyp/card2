@@ -45,4 +45,65 @@
     color: white;
 }
 
-  
+@media (max-width: 700px) {
+    .all{
+        height: 300px;
+    }
+    .imgg {
+        position: relative;
+        width: 370px;
+        margin-left: -125px;
+        margin-top: 220px;
+    }
+    .card1{
+        margin-top: -5px;
+        height: 500px;
+        
+    }  
+    .text {
+        position: absolute;
+        top: 340px;
+        width: 400px;
+        font-size: 23px;
+        left: 270px;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+    .name{
+        position: absolute;
+        top: 380px;
+        font-size: 15px;
+        left: 120px;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+    .date{
+        position: absolute;
+        top: 380px;
+        font-size: 15px;
+        left: 320px;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+    .img2 {
+        position: relative;
+        width: 370px;
+        margin-top: -90px;
+        
+    }
+    .card2{
+        
+        margin-left: 18px;
+        margin-top: -400px;
+    } 
+    .text2{
+        position: absolute;
+        top: 105px;
+        font-size: 25px;
+        left: 325px;
+        transform: translate(-50%, -50%);
+        color: rgb(255, 255, 255);
+    }
+    
+      
+}

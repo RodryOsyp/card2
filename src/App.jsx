@@ -31,6 +31,7 @@ function App() {
   };
   return (
     <>
+    <div className="box">
       <div className="wrapper">
         
       <MyContext.Provider value={{
@@ -45,17 +46,16 @@ function App() {
       }}
     >
         <div className="gradient">
-        <Card/>
+         <Card/>
         </div>
         <div className="form">
+          
           <Form/>
         </div>
         </MyContext.Provider>
         
-        <Link className="box" to="/Mobile">
-          <div className="mobile">Go to Mobile Version</div>
-          </Link> 
         
+      </div>
       </div>
     </>
   );
