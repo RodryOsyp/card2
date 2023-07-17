@@ -1,7 +1,5 @@
 import { useState } from "react";
-import { Link } from 'react-router-dom';
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+
 
 import "./App.css";
 import Form from "./compot/Form/Form";
@@ -11,7 +9,8 @@ import { MyContext } from "./MyContext";
 function App() {
   const [text, setText] = useState('0000 0000 0000 0000');
   const [name, setName] = useState('Tymur Bogdanovich');
-  const [expDate, setExpDate] = useState('00/00');
+  const [expMonth, setExpMonth] = useState('00');
+  const [expYear, setExpYear] = useState('00');
   const [cvc, setCvc] = useState('000');
 
   const handleTextChange = (newText) => {
@@ -22,8 +21,12 @@ function App() {
     setName(newName);
   };
 
-  const handleExpDateChange = (newExpDate) => {
-    setExpDate(newExpDate);
+  const handleExpYearChange = (newExpYear) => {
+    setExpYear(newExpYear);
+  };
+
+  const handleExpMonthChange = (newExpMonth) => {
+    setExpMonth(newExpMonth);
   };
 
   const handleCvcChange = (newCvc) => {
@@ -37,11 +40,13 @@ function App() {
       <MyContext.Provider value={{
         text,
         name,
-        expDate,
+        expMonth,
+        expYear,
         cvc,
         handleTextChange,
         handleNameChange,
-        handleExpDateChange,
+        handleExpMonthChange,
+        handleExpYearChange,
         handleCvcChange,
       }}
     >
